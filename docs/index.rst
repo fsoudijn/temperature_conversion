@@ -12,5 +12,6 @@ Welcome to Temperature conversion's documentation!
    
    project-intro.md
    code-setup.md
+   api.rst
 
 
