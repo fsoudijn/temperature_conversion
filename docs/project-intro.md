@@ -2,4 +2,4 @@
 
 This project is used to convert temperatures between different units.
 
-There are so far Kelvin, Celsius and Fahrenheit included
+There are so far Kelvin, Celsius and Fahrenheit included.
