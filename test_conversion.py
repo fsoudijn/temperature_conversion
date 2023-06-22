@@ -21,3 +21,5 @@ def test_celsius_to_fahrenheit_none():
     assert celsius_to_fahrenheit(None) is None
 
 
+def test_that_doesnot_do_anything():
+    celsius_to_fahrenheit(0)
