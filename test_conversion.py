@@ -12,3 +12,12 @@ def test_celsius_to_fahrenheit():
 def test_kelvin_to_fahrenheit():
     tiny_kelvin = 1e06
     assert kelvin_to_fahrenheit(40) == pytest.approx(387.67,tiny_kelvin)
+
+def test_celsius_to_fahrenheit_invalid():
+    with pytest.raises(TypeError):
+        celsius_to_fahrenheit("Invalid")
+
+def test_celsius_to_fahrenheit_none():
+    assert celsius_to_fahrenheit(None) is None
+
+
