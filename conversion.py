@@ -60,3 +60,21 @@ def check_unit_validity(unit):
     if not unit in ["C", "F", "K"]:
         return False
     return True
+
+def convert_temperature(temperature, unit):
+    if not check_unit_validity(unit):
+        return "Invalid unit"
+    if not check_temperature_validity(temperature, unit):
+        return "Invalid temperature"
+    if unit == "F":
+        celsius = fahrenheit_to_celsius(temperature)
+        kelvin = celsius_to_kelvin(celsius)
+        return celsius, kelvin
+    elif unit == "C":
+        fahrenheit = celsius_to_fahrenheit(temperature)
+        kelvin = celsius_to_kelvin(temperature)
+        return fahrenheit, kelvin
+    elif unit == "K":
+        celsius = kelvin_to_celsius(temperature)
+        fahrenheit = celsius_to_fahrenheit(celsius)
+        return celsius, fahrenheit
