@@ -20,6 +20,8 @@ def celsius_to_kelvin(celsius):
     Returns:
         float: temperature in degrees kelvin
     """
+    if celsius is None: 
+        return(None)
     return celsius + 273.15
 
 def kelvin_to_fahrenheit(kelvin):
@@ -31,5 +33,7 @@ def kelvin_to_fahrenheit(kelvin):
     Returns:
         float: temperature in degrees fahrenheit
     """
+    if kelvin is None: 
+        return(None)
     celsius = kelvin - 273.15
     return celsius_to_fahrenheit(celsius)
