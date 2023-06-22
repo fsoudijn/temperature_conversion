@@ -12,7 +12,7 @@ def celsius_to_fahrenheit(celsius):
     return celsius/5*9 + 32
 
 def fahrenheit_to_celsius(fahrenheit):
-    if celsius is None: 
+    if fahrenheit is None: 
         return(None)
     return (fahrenheit - 32) * (5 / 9)
 
@@ -30,7 +30,7 @@ def celsius_to_kelvin(celsius):
     return celsius + 273.15
 
 def kelvin_to_celsius(kelvin):
-    
+
     return kelvin - 273.15
 
 def kelvin_to_fahrenheit(kelvin):
